@@ -5,7 +5,8 @@
 //  data types 
 
 let age = 23
-let name = "Akash"
+let name = "Akash kumar"
+console.log(age);
 let islogged = true;
 let state;
 
