@@ -8,7 +8,7 @@ accoutemail ="maurya@gmail.com"
 accountcity = "bengal"
 accountpassword ="234"
 
-
+// we should not use Var in js bcz it hava a problem with scope 
 
 
 // accountid = 234  this is constant variable and it is not allowed
