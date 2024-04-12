@@ -56,14 +56,14 @@ console.log(newstring);
 const temp = new String("hi i am Akash kumar maurya where i am doing my job")
 
 console.log(temp.split(" "));
-   
+// output of the spilt on the basis of " "
 
-
-   
-   
-   
-   
-
-
-
-
+/*
+[
+  'hi',    'i',
+  'am',    'Akash',
+  'kumar', 'maurya',
+  'where', 'i',
+  'am',    'doing',
+  'my',    'job'
+]*/ 
