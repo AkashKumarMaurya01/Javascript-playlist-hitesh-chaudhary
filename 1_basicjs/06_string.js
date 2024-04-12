@@ -41,7 +41,7 @@ console.log(newstring);
       const url = "https://google.com/font%20size"
 
     // here replace(kyahatana h  serach karke , replace kisse karnaa hai  )
-     console.log(url.replace('%20' , '-'));
+     console.log(url.replace('/' , '-'));
     // output :=> https://google.com/font-size
 
 // there a another method called include 
