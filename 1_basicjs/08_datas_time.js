@@ -1,6 +1,6 @@
 // *************DATES**************
 
-/*
+
 let mydate = new Date();
 
 console.log(mydate);                         //2024-04-12T14:24:22.083Z
@@ -37,12 +37,13 @@ console.log(datecurr.getFullYear());
 // 5
 // 3
 // 2024 
-*/
+
 
 const datetime = new Date();
 
 datetime.toLocaleString('default', {
 
-    weekday:"long"
+    weekday:"long",
+    
 
 })
