@@ -45,5 +45,4 @@ datetime.toLocaleString('default', {
 
     weekday:"long",
     
-
 })
