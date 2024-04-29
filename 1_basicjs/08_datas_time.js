@@ -3,7 +3,7 @@
 
 let mydate = new Date();
 
-console.log(mydate);                         //2024-04-12T14:24:22.083Z
+console.log( "this is the first dates" + mydate);                         //2024-04-12T14:24:22.083Z
 console.log(mydate.toString());              //Fri Apr 12 2024 19:54:22 GMT+0530 (India Standard Time)
 console.log(mydate.toLocaleString());        //12/04/2024, 19:55:02
 console.log(mydate.toLocaleDateString());    // 12/04/2024
@@ -27,22 +27,26 @@ console.log(tempdate.getTime());//1704306600000 are in ms
 
 // change the ms into second 
 
+let timestamp = Date.now();
+console.log("ms to second " +   Math.floor(timestamp/1000));
+
 
 let datecurr = new Date();
 
 console.log(datecurr.getDay());
+console.log(datecurr.getDate())
 console.log(datecurr.getMonth());
 console.log(datecurr.getFullYear());
+console.log(datecurr.getHours());
 // output
 // 5
 // 3
 // 2024 
 
 
-const datetime = new Date();
-
-datetime.toLocaleString('default', {
-
+datecurr.toLocaleString('default' , {
     weekday:"long",
-    
+    dateStyle:"full",
+    year:"numeric"
+
 })
