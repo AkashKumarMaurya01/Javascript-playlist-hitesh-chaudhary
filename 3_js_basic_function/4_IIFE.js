@@ -11,7 +11,6 @@
     console.log("db connected two");
 })() ;
 
-
 ((name)=>
 {
     console.log(`db connected two ${name}`);
