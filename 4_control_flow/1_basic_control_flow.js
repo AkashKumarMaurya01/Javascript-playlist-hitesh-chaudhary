@@ -50,6 +50,7 @@ else
 }
 */
 
+/*
 const userlogged  = true
 const debitcard = true
 const loggefdifromgoogle = false
@@ -63,3 +64,4 @@ if(loggedinfromemail || loggefdifromgoogle)
 {
     console.log("use is loggedd in ");
 }
+*/
