@@ -1,11 +1,11 @@
 const lang = [1,2,3,4,5,6]
-/**
 
 // simple for each loop using fuction 
-lang.forEach( function(val){
+lang.forEach(function(val){
     console.log(val);
 })
 
+/*
 //output
 1
 2
@@ -50,7 +50,7 @@ lang.forEach(print);
 
 /*
  
-lang.forEach((i , index , arr )=>{
+lang.forEach((value , index , arr )=>{
     console.log("value" , i, "index", index ,"array", arr);
 })
 
@@ -64,7 +64,6 @@ value 4 index 3 array [ 1, 2, 3, 4, 5, 6 ]
 value 5 index 4 array [ 1, 2, 3, 4, 5, 6 ]
 value 6 index 5 array [ 1, 2, 3, 4, 5, 6 ]
 
-*/
 
 const coding_lang = [
     {
@@ -80,7 +79,9 @@ const coding_lang = [
         languanamefull:"JAVA"
     }
 ]
- coding_lang.forEach((item)=>{
+coding_lang.forEach((item)=>{
     console.log(( item.languaname + ":-> " + item.languanamefull));
     
- })
+})
+
+*/

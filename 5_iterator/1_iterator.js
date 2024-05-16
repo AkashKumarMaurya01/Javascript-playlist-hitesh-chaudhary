@@ -1,6 +1,7 @@
 // for loop
 /*
-for (let index = 0; index < 10; index++) {
+*/
+for ( index = 0; index < 10; index++) {
     const element = index;
 
     if(index==5 )
@@ -10,7 +11,6 @@ for (let index = 0; index < 10; index++) {
     console.log(index);
 
 }
-*/
 
 
 // nested loop 
@@ -34,7 +34,6 @@ for (let i = 0; i < myarray.length; i++)
     console.log(element);
     
 }
-*/
 
 // break 
 for (let i = 1; i <= 20; i++) {
@@ -49,9 +48,11 @@ for (let i = 1; i <= 20; i++) {
 for (let j = 1; j <=20; j++) {
     
     if(j==5)
-    {
-        console.log("5 is detected continue");
-        continue
+        {
+            console.log("5 is detected continue");
+            continue
+        }
+        console.log(`the value of j is ${j}`);
     }
-    console.log(`the value of j is ${j}`);
-}
+    
+    */

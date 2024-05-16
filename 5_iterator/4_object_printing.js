@@ -1,3 +1,4 @@
+
 const obj = {
     js:"javascripot",
     cpp:"c plus plus",
@@ -7,12 +8,13 @@ const obj = {
 
 
 // Printing the array 
-for (const key in obj) {
+for (key in obj) {
     console.log(`key is ${key} and value is ${obj[key]}`);
 }
+
 const arr = [1,2,3,5]
 for (const i in arr) {
-    console.log(i);
+    console.log(arr[i]);
    
 }
 
