@@ -49,11 +49,11 @@ each char is !
 
 //MAPS 
 
-const mp  = new Map()
-mp.set('IN' , 'INDIA')
-mp.set('EN' , 'ENGLAND')
-mp.set('FR' , 'FRANCE')
-mp.set('CH' , 'CHINA')
+// const mp  = new Map()
+// mp.set('IN' , 'INDIA')
+// mp.set('EN' , 'ENGLAND')
+// mp.set('FR' , 'FRANCE')
+// mp.set('CH' , 'CHINA')
 
 
 /*
@@ -68,10 +68,10 @@ Map(4) {
 
 //Printing map element using for loop 
 
-for (const [key , value] of mp) 
-{
-  console.log(` key is ${key} and value is ${value}`);   
-}
+// for (const [key , value] of mp) 
+// {
+//   console.log(` key is ${key} and value is ${value}`);   
+// }
 
 
 
@@ -79,16 +79,15 @@ for (const [key , value] of mp)
 
 /*
 //  Notes ==== way of printing the object first and second value 
+*/
 const obj = {
     name : "Akash",
     age:21,
     class:614
 }
 
-// this is not the way of iterating the value of the objects we will see later in this playlist
+// X wrong way of printing the objects value  ---->  this is not the way of iterating the value of the objects we will see later in this playlist
 for (const [i,j] of obj) { // obj is not iterable
     console.log(i);
     console.log(j);
 }
-
-*/
