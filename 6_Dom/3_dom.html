@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+         <script>
+            // create html element by using js
+            const div = document.createElement('div')
+            console.log(div);
+            div.className = "container"
+            div.id = Math.round(Math.random()+10+1)
+            div.style.background= "Yellow"
+            div.style.padding = "15px"
+            
+            div.innerHTML = "chai aur code"
+                    //OR both work some above and belows 
+            // const text = document.createTextNode("chai aur code ")
+            // div.append(text)
+
+            // body is here parent and we are adding a div as a child item in the parent using document.body.appendchild(div)
+           document.body.appendChild(div) // ye webpage par chai aur code likh kar render kar dega with background color yellow
+
+
+
+
+            // create custom element by using js
+         </script>
+</html>

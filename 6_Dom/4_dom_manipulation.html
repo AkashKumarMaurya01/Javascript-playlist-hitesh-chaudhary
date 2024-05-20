@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Akash</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langname)
+    {
+
+        const li = document.createElement("li")
+        li.innerHTML =`${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguage("python")
+    addlanguage("C++")
+    addlanguage("typescript")
+
+    function addoptimizelanguage(lang) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)        
+    }
+    
+    addoptimizelanguage("CSS")
+    addoptimizelanguage("C")
+
+
+    // ++++++++++++++++++++++++++++++++++Edit the element 1+++++++++++++++++++++++++++++++
+      // task: replace second lang python to Golang
+
+    const second_lang = document.querySelector("li:nth-child(2)");
+    console.log(second_lang);
+    const newli = document.createElement("li")
+    
+    // newli.textContent = "Golang" //1
+    //or 
+     newli.textContent = "Golang" //2
+     //both work same 
+    second_lang.replaceWith(newli) // {python} replace with {golang}
+    
+    //+++++++++++++++++++++++++++++++ EDit the element++++++++++++++++++++++++++++++++++++++ 
+
+      // task: replace first lang javascript to typescript
+
+      const firstlang = document.querySelector('li:nth-child(1)')
+      firstlang.outerHTML = "<li>Typescript</li>";
+
+
+      //+++++++++++++++++Remove the element++++++++++++++
+
+        // task is to remove the third element C++ 
+
+        const third_lang = document.querySelector("li:nth-child(3)")
+         third_li = document.createElement("li");
+         third_lang.remove()
+       
+ 
+
+</script>
+</html>
