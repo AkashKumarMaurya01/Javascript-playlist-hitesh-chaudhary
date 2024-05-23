@@ -1,0 +1,27 @@
+nav {
+    display:flex;
+    justify-content: start;
+    margin: auto 0;
+    gap: 15px;
+    width: 100%;
+  }
+.home{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    width: 180px;
+    text-align: center;
+    background-color: rgb(231, 230, 230);
+  }
+  .youtube {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    width: 180px;
+    text-align: center;
+    background-color: #fff;
+  }
