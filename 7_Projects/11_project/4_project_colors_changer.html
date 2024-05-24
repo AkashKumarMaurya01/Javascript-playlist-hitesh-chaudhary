@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121;">
+    <button id="start">start</button>
+    <button id="end">end</button>
+
+</body>
+<script>
+    const colors = function () {
+        const hex = '0123456789ABCDEF'
+        let clr = '#';
+        for (let i = 0; i < 6; i++) {
+            clr += hex[Math.floor(Math.random() * 16)];
+        }
+        //  console.log(clr);
+        return clr;
+    };
+
+    document.querySelector('#start').addEventListener('click', function () {
+        const changing_clrs = setInterval(function () {
+            document.body.style.backgroundColor = colors();
+        }, 10)
+
+        document.querySelector("#end").addEventListener('click', function () {
+            clearInterval(changing_clrs)
+        })
+    }
+
+
+    )
+
+</script>
+
+</html>
