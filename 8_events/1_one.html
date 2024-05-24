@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><a style="color: aliceblue; font-size: 50px;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+
+    </div>
+</body>
+
+<script>
+    /*
+        document.querySelector('#owl').onclick=function() //or we 
+        {
+            alert("owl")
+        }
+                          ++++++ OR++++++++++++ 
+        document.getElementById('owl').onclick=function()
+        {
+            alert("owl is clicked")
+        }
+        these above methods are not used usually purana ho chuka h naya method aa gya h like addeventlistener
+        document.getElementById("owl").addEventListener('click', function (e) {
+            
+            console.log(e);
+            
+        }, false) // false default use hota h ,,nhi b use karege to chalega lekin kahi kahi project me bina false ya true mark kiye bina kam hota hi nahi hai 
+        
+        */
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+
+
+    // ++++++++++++++eventPropagation -> (i) eventBubbliing (ii) evenCapturing ++++++++++ 
+
+
+
+    //**++++** eventbubbling :"child to parent" bubble niche se upr jata h means ...hm agar child par click kiye to phle addEventListener child ka sunega phir parent ki sunega 
+    /*
+    
+    
+    document.getElementById('images').addEventListener('click', function (e) {
+        console.log('parent ul is clicked');
+}, false)
+document.getElementById('owl').addEventListener('click', function (e) {
+    console.log('owl is clicked');
+}, false)
+ 
+ 
+//   owl is clicked
+//   parent ul is clicked
+ 
+ 
+ 
+ 
+ 
+ 
+//**++++** eventcapture :"" parent to child" :-> capturing upr se niche ki taraff hoti h : means agr hm koi addEventListener click karenge to phle parent ka activity perfom hogi uske baad child ki hogi 
+//   we can se from the above two example
+ 
+document.getElementById('images').addEventListener('click', function (e) {
+    console.log('parent ul is clicked');
+}, true)
+ 
+document.getElementById('owl').addEventListener('click', function (e) {
+    console.log('owl is clicked');
+    e.stopPropagation()
+    // same like e.preventDefault
+}, true)
+ 
+ 
+// output : 
+//   parent ul is clicked
+//   owl is clicked
+ 
+// preventDefault  
+ 
+document.getElementById('google').addEventListener('click' , function(e)
+{ 
+    e.preventDefault();
+    e.stopPropagation();
+    console.log("google is clicked");
+})
+*/
+    document.querySelector("#images").addEventListener('click', function (e)
+    {
+        if (e.target.tagName === 'IMG') 
+        {
+            let Remove_element = e.target.parentNode
+            console.log(e.target.parentNode);//li is parent of all the child node(img) 
+            Remove_element.remove();
+        }
+    })
+
+
+    
+
+
+
+</script>
+
+</html>

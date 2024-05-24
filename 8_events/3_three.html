@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+
+
+<script>
+    // start karne par setdate kam kare stop karne par ruk jaye
+
+    const setdate = function(str)
+    {
+        const date= new Date();
+        console.log(str , date.toLocaleString());
+    } 
+
+    let setinter;
+    document.querySelector("#start").addEventListener('click',function()
+    {
+         setinter = setInterval(setdate , 1000 , "hi");
+    })
+    document.querySelector("#stop").addEventListener('click', function()
+    {
+        clearInterval(setinter)
+    })
+
+</script>
+
+</html>
